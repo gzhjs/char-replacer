@@ -1,8 +1,3 @@
-/*
-目前存在的问题：
-如果特殊字符是正则里的特殊符号，比如?、*还没处理
-config.src和config.dest还没处理完圈
-*/
 var fs = require('fs');
 var childProcess = require('child_process');
 var through2 = require('through2');
