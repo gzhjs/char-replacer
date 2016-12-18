@@ -6,7 +6,7 @@ var readStream;
 var writeStream;
 var processor;
 
-var preProcess = function(config) {
+var replacer = function(config) {
     var charMap = config.charMap;
 
     fs.access(config.dest, function(err) {
@@ -33,4 +33,4 @@ var preProcess = function(config) {
     });
 };
 
-module.exports = preProcess;
+module.exports = replacer;
