@@ -1,12 +1,12 @@
 {
   "name": "char-replacer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "through2": "^2.0.3"
   },
   "scripts": {
-  	"test": "node ./test/test.js"
+    "test": "node ./test/test.js"
   }
 }
