@@ -35,10 +35,8 @@ var processFunc = function(src, dest, charMap) {
 var replacer = function(config) {
     var charMap = config.charMap;
     var asteriskReg = /(?:\.)?\/\*$/;
-    // // 没有明确指明目标目录则取config.src为目标目录
-    // config.dest = config.dest || config.src;
-    console.log(config.dest);
-    return;
+    // 没有明确指明目标目录则取config.src为目标目录
+    config.dest = config.dest || config.src;
 
     if (asteriskReg.test(config.src)) {
         var srcPath = config.src.replace(asteriskReg, '');
