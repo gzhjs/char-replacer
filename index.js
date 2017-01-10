@@ -12,7 +12,6 @@ var processFunc = function(src, dest, charMap) {
         if (err) {
             var reg = /((?:[^\/]+\/)*)([^\/]*\.[a-z]+)$/;
             var matchRes = dest.match(reg);
-            console.log('=====: ', dest, matchRes);
             var filePath = matchRes[1];
             childProcess.exec('mkdir -p ' + filePath);
             childProcess.exec('touch ' + dest);
@@ -35,7 +34,7 @@ var processFunc = function(src, dest, charMap) {
 var replacer = function(config) {
     var charMap = config.charMap;
     var asteriskReg = /(?:\.)?\/\*$/;
-    // 没有明确指明目标目录则取config.src为目标目录
+    // 没有明确指明目标目录则取config.src为目标目录。该情况下将为替换原文件慎重使用
     config.dest = config.dest || config.src;
 
     if (asteriskReg.test(config.src)) {
