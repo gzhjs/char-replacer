@@ -20,5 +20,5 @@ replacer(config);
 
 关于config:
 
-- src是原路径，可制定单个文件，也可制定一批文件，当然通配符也是可以的，比如'./src/test.txt'、'./src'、'./src/*'
-- dest是原路径，可制定单个文件，也可制定一批文件，当然通配符也是可以的，比如'./dest/test.txt'、'./dest'、'./dest/*'
+- src是原路径，可指定单个文件，也可指定一批文件，当然通配符也是可以的，比如'./src/test.txt'、'./src'、'./src/*'
+- dest是原路径，可指定单个文件，也可指定一批文件，当然通配符也是可以的，比如'./dest/test.txt'、'./dest'、'./dest/*'
